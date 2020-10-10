@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text=" Trust Name"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/trustidview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="TrustId"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/trustid"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trustidview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/addressview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/trustid"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/cityview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="City"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/stateview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/city"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="State"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/pincodeview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/state"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Pincode"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pincodeview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/mobileview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pincode"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Mobile-No"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/emailview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mobile"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/passview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Passsword"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/confview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pass"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Confirm Password"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/conpass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Pic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/conpass"
+                android:textSize="30dp"
+                android:id="@+id/profilepic"
+                />
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/trustdp"
+                android:layout_below="@id/conpass"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="4dp"
+                />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trustdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:text="Signup" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="100"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:tag="uploading..."
+        android:progressTint="@color/colorAccent"
+        android:progressBackgroundTint="@color/colorAccent"
+        android:max="100"
+        android:id="@+id/progrss1"
+        />
+    <TextView android:textSize="30dp"
+        android:textColor="@color/Black"
+        android:gravity="center"
+        android:id="@+id/writeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="write your post"/>
+
+    <EditText android:id="@+id/write"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter story here"
+        android:layout_below="@+id/writeview"
+       />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="750px"
+        android:layout_height="500px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/write"
+       android:layout_marginTop="50dp"
+        android:visibility="gone"
+        />
+
+
+    <TextView android:id="@+id/pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ic_image_violet"
+        android:layout_below="@+id/writeview"/>
+
+    <Button
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="30dp"
+        android:text="Post"
+        android:layout_below="@+id/picture"/>
+</RelativeLayout>

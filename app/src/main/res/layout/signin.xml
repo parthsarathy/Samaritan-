@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@drawable/plainbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:textSize="30dp"
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Email"/>
+
+
+    <EditText android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/editbox"
+        android:layout_below="@+id/textview1"
+        android:inputType="textEmailAddress"/>
+
+    <TextView android:textSize="30dp"
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:layout_below="@+id/email"/>
+
+    <EditText android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbox"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textview2"
+        android:inputType="textPassword"/>
+
+    <ProgressBar android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button android:textSize="30dp"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="New User?"
+        android:layout_below="@+id/login"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/frgrtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:text="Forget password?"
+        android:layout_below="@+id/login"/>
+</RelativeLayout>

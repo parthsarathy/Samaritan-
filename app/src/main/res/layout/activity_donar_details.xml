@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/nameview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Name"/>
+            <EditText android:textSize="30dp" android:id="@+id/name" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/nameview"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/addressview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Address" android:layout_below="@+id/name"/>
+            <EditText android:textSize="30dp" android:id="@+id/address" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/addressview"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/cityview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="City" android:layout_below="@+id/address"/>
+            <EditText android:textSize="30dp" android:id="@+id/city" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/cityview"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/stateview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="State" android:layout_below="@+id/city"/>
+            <EditText android:textSize="30dp" android:id="@+id/state" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/stateview"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/pincodeview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Pincode" android:layout_below="@+id/state"/>
+            <EditText android:textSize="30dp" android:id="@+id/pincode"  android:inputType="number" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/pincodeview"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/mobileview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Mobile-No" android:layout_below="@+id/pincode"/>
+            <EditText android:textSize="30dp" android:id="@+id/mobile" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/mobileview" android:inputType="number"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/emailview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Email" android:layout_below="@+id/mobile"/>
+            <EditText android:textSize="30dp" android:id="@+id/email" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/emailview" android:inputType="textEmailAddress"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/passview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Passsword" android:layout_below="@+id/email"/>
+            <EditText android:textSize="30dp" android:id="@+id/pass" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/passview" android:inputType="textPassword"/>
+            <TextView android:textSize="30dp" android:textColor="#000000" android:id="@+id/confview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:text="Confirm Password" android:layout_below="@+id/pass"/>
+            <EditText android:textSize="30dp" android:id="@+id/conpass" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_below="@+id/confview"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Pic"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/conpass"
+                android:textSize="30dp"
+                android:id="@+id/profilepic"
+                />
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/donordp"
+                android:layout_below="@id/conpass"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/profilepic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="4dp"
+                />
+            <Button android:id="@+id/signup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="40dp" android:text="Signup" android:layout_below="@+id/donordp"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar android:id="@+id/progress"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="100"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
